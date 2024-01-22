@@ -1,0 +1,17 @@
+* vmware installation notes
+
+** vmware copy/pase
+
+install this to fix vmware copy/pase issues
+
+#+begin_src bash
+sudo apt install open-vm-tools open-vm-tools-desktop
+#+end_src
+
+** How to mount win directories
+
+/etc/fstab
+#+begin_src text
+.host:WinShare  /home/remfils/WinShare  fuse.vmhgfs-fuse        allow_other,uid=1000,gid=1000   0       0
+.host:Org       /home/remfils/Org       fuse.vmhgfs-fuse        allow_other,uid=1000,gid=1000   0       0
+#+end_src

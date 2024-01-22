@@ -1,6 +1,6 @@
 picom -f &
 
-vmtoolsd -n vmusr --blockFd 3 &
+/usr/bin/vmware-user &
 
 nitrogen --restore &
 
