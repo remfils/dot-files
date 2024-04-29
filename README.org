@@ -1,3 +1,19 @@
+* installation notes
+
+** install 
+
+#+begin_src sh
+apt install vim git emacs
+#+end_src
+
+** install packages required for build
+
+#+begin_src sh
+apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg
+#+end_src
+
+** download everything
+
 * vmware installation notes
 
 ** vmware copy/pase
