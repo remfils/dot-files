@@ -3,7 +3,7 @@
 ** install 
 
 #+begin_src sh
-apt install vim git emacs
+apt install vim git emacs scrot xclip
 #+end_src
 
 ** install packages required for build
