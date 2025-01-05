@@ -3,7 +3,7 @@
 ** install 
 
 #+begin_src sh
-apt install vim git emacs scrot xclip
+apt install vim git emacs scrot xclip picom nitrogen
 #+end_src
 
 ** install packages required for build
@@ -12,7 +12,15 @@ apt install vim git emacs scrot xclip
 apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg
 #+end_src
 
-** download everything
+** download repositories
+
+mkdir ~/Install
+git clone git@github.com:remfils/dwm.git
+git clone git@github.com:remfils/slstatus.git
+git clone git@github.com:remfils/dmenu.git
+git clone git@github.com:remfils/st.git
+
+** copy .config directory
 
 * vmware installation notes
 
