@@ -14,11 +14,13 @@ apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg
 
 ** download repositories
 
-mkdir ~/Install
+#+begin_src sh
+mkdir ~/install
 git clone git@github.com:remfils/dwm.git
 git clone git@github.com:remfils/slstatus.git
 git clone git@github.com:remfils/dmenu.git
 git clone git@github.com:remfils/st.git
+#+end_src
 
 ** copy .config directory
 
@@ -34,8 +36,15 @@ sudo apt install open-vm-tools open-vm-tools-desktop
 
 ** How to mount win directories
 
-/etc/fstab
+@file:/etc/fstab
 #+begin_src text
 .host:WinShare  /home/remfils/WinShare  fuse.vmhgfs-fuse        allow_other,uid=1000,gid=1000   0       0
 .host:Org       /home/remfils/Org       fuse.vmhgfs-fuse        allow_other,uid=1000,gid=1000   0       0
+#+end_src
+
+* post install notes
+
+** fix timezone to not select it everytime
+#+begin_src bash
+sudo timedatectl set-timezone Europe/Moscow
 #+end_src
