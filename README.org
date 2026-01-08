@@ -22,6 +22,13 @@ git clone git@github.com:remfils/dmenu.git
 git clone git@github.com:remfils/st.git
 #+end_src
 
+** copy fonts
+
+#+begin_src sh
+sudo mkdir  /usr/share/fonts/truetype/vpereskokov/
+sudo cp fonts/* /usr/share/fonts/truetype/vpereskokov/
+#+end_src
+
 ** copy .config directory
 
 * vmware installation notes
