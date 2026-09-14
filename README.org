@@ -31,6 +31,8 @@ sudo cp fonts/* /usr/share/fonts/truetype/vpereskokov/
 
 ** copy .config directory
 
+** install quickshell
+
 * vmware installation notes
 
 ** vmware copy/pase
