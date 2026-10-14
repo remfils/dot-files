@@ -1,16 +1,22 @@
-xset s off
-xset -dpms
+export XDG_PORTALS_ENABLED=0
 
-picom -f &
-quickshell &
+#picom -f &
 
-# /usr/bin/vmware-user &
+#quickshell &
 
-nitrogen --restore &
+#nitrogen --restore &
 
-# slstatus &
+# NOTE: fix for clipboard issue
+flameshot &
+
+# NOTE: fix for chromium bug
+easystroke hide &
+
+thunar --daemon &
+
+slstatus &
 
 setxkbmap -option ctrl:nocaps
 setxkbmap -layout us,ru -option grp:win_space_toggle 
 
-exec dwm
+exec dwm 2>~/dwm.log
